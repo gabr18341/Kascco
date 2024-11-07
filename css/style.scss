@@ -31,7 +31,8 @@ header {
     -ms-transition: all .4s ease;
     -o-transition: all .4s ease;
         &.scrolled{
-        background-color: #fff;
+        background-color: rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(10px) ;
         position: fixed;
         top: 0;
         left: 0;
@@ -43,16 +44,8 @@ header {
         -moz-border-radius: 0 0 8px 8px;
         -ms-border-radius: 0 0 8px 8px;
         -o-border-radius: 0 0 8px 8px;
-        nav {
-            a {
-                color: var(--text-color);
-            }
-        }
     }
     nav {
-        .dropdown {
-            
-        }
         a {
             color: #eee;
             position: relative;
