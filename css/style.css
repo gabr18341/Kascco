@@ -456,4 +456,60 @@ header nav a:hover, header nav a.active {
 }
 .out-business .card a {
   color: var(--main-color);
+}
+
+.certification h4 {
+  text-align: center;
+  color: var(--main-color);
+  font-size: 1.8rem;
+}
+.certification hr {
+  border: none;
+  border-top: 2px solid var(--dark-color);
+  margin: 20px auto;
+  width: 25%;
+}
+.certification .swiper {
+  width: 100%;
+  height: 100%;
+}
+.certification .swiper .swiper-pagination-bullet-active {
+  background-color: var(--main-color) !important;
+}
+.certification .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.certification .swiper-slide .card {
+  max-width: 150px;
+  min-width: 200px;
+}
+.certification .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.kascco-s-anniversary-page {
+  background-color: #f1f5f0;
+  color: #212529;
+  min-height: 80vh;
+}
+.kascco-s-anniversary-page .card {
+  height: 200px;
+}
+.kascco-s-anniversary-page .card .card-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.kascco-s-anniversary-page .card .card-body h5 {
+  font-size: 2rem;
+  color: var(--main-color);
 }/*# sourceMappingURL=style.css.map */
