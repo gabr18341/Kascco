@@ -51,8 +51,6 @@ window.addEventListener("scroll", function () {
 
 AOS.init();
 
-console.log(window.innerWidth);
-
 const countSliders = window.innerWidth > 992 ? 4 : window.innerWidth > 489 ? 2 : 1;
 
 //   swiper
