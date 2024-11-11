@@ -676,6 +676,13 @@ header .menu-btn i {
   .footer .footer-col {
     width: 100%;
   }
+  .footer .footer-col div {
+    text-align: center;
+  }
+  .footer .footer-col img {
+    width: 200px;
+    margin: 0 auto;
+  }
 }
 
 @media (max-width: 798px) {

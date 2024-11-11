@@ -788,6 +788,15 @@ header {
     @media(max-width: 574px) {
         .footer-col {
             width: 100%;
+
+            div {
+                text-align: center;
+            }
+
+            img {
+                width: 200px;
+                margin: 0 auto;
+            }
         }
     }
     
