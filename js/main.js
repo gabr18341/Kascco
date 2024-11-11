@@ -1,7 +1,7 @@
 // scroll
 const header = document.querySelector("header");
 header.innerHTML = `
-    <div class="d-flex py-2 justify-content-between align-items-center container">
+      <div class="d-flex py-2 justify-content-between align-items-center container">
         <div class="logo-container">
             <a href="index.html">
                 <img src="assets/images/KASCCO-logo.png" height="50" alt="Kascco">
@@ -37,7 +37,8 @@ header.innerHTML = `
             <button class="btn btn-primary">Contact Us</button>
             <button class="btn btn-outline-primary">Sign In</button>
         </div>
-    </div>
+        <button class="menu-btn text-body"><i class='bx bx-menu' ></i></button>
+      </div>
 `
 
 window.addEventListener("scroll", function () {
@@ -66,4 +67,14 @@ var swiper = new Swiper(".mySwiper", {
     el: ".swiper-pagination",
     clickable: true,
   },
+});
+
+// mobile menu *********
+
+const menuToggle = document.querySelector(".menu-btn");
+const menu = document.querySelector("header nav"); 
+
+menuToggle.addEventListener("click", function () {
+  menuToggle.classList.toggle("active");
+  menu.classList.toggle("show");
 });
