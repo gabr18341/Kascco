@@ -19,7 +19,7 @@ header .contact-btns button.btn-outline-primary{
 }
 
 main {
-    background: #b7cc33;
+    background: #f4f7f6;
     font-size: 14px;
     color: #000;
     height: 100vh;
@@ -38,7 +38,13 @@ main .swiper-slide {
     background-position: center;
     background-size: contain;
     width: 400px;
-    max-width: 100%;
+    max-width: 90%;
     height: 450px;
     -webkit-box-reflect: below 1px linear-gradient(transparent, transparent, #0006);
+}
+
+@media (max-width: 768px) {
+    main {
+        overflow-x: hidden;
+    }
 }

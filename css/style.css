@@ -16,8 +16,65 @@ body {
   box-sizing: border-box;
 }
 
+ul {
+  list-style: none;
+}
+
 a {
   text-decoration: none;
+}
+
+/*--------------------------------------------------------------
+  # Global Page Titles & Breadcrumbs
+  --------------------------------------------------------------*/
+.page-title {
+  color: #ffffff;
+  background-color: #ffffff;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 160px 0 60px 0;
+  text-align: center;
+  position: relative;
+}
+
+.page-title:before {
+  content: "";
+  background-color: color-mix(in srgb, #364d59, transparent 40%);
+  position: absolute;
+  inset: 0;
+}
+
+.page-title h1 {
+  font-size: 56px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.page-title .breadcrumbs ol {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.page-title .breadcrumbs ol li + li {
+  padding-left: 10px;
+}
+
+.page-title .breadcrumbs a {
+  color: var(--main-color);
+}
+
+.page-title .breadcrumbs ol li + li::before {
+  content: "/";
+  display: inline-block;
+  padding-right: 10px;
+  color: color-mix(in srgb, #ffffff, transparent 20%);
 }
 
 header {
@@ -50,12 +107,12 @@ header.scrolled {
 header.scrolled .menu-btn i {
   color: var(--dark-color);
 }
-header nav a {
+header nav a, header nav span {
   color: #eee;
   position: relative;
   transition: all 0.4s ease;
 }
-header nav a::before {
+header nav a::before, header nav span::before {
   content: "";
   position: absolute;
   bottom: -4px;
@@ -69,10 +126,10 @@ header nav a::before {
   -ms-transition: all 0.4s ease;
   -o-transition: all 0.4s ease;
 }
-header nav a:hover::before, header nav a.active::before {
+header nav a:hover::before, header nav a.active::before, header nav span:hover::before, header nav span.active::before {
   width: 100%;
 }
-header nav a:hover, header nav a.active {
+header nav a:hover, header nav a.active, header nav span:hover, header nav span.active {
   color: var(--main-color);
 }
 header .menu-btn {
@@ -166,6 +223,7 @@ header .menu-btn i {
   z-index: 100;
   display: flex;
   gap: 20px;
+  opacity: 0;
 }
 .hero-section .thumbnail .item {
   width: 150px;
@@ -384,18 +442,24 @@ header .menu-btn i {
   color: var(--text-color);
 }
 .about-section .title {
-  font-size: 1.8rem;
+  font-size: 2rem;
   color: #153745;
 }
 .about-section .sub-title {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-image: linear-gradient(135deg, var(--main-color) 0%, var(--dark-color) 100%);
 }
 .about-section img {
-  width: 100%;
-  max-height: 230px;
+  max-height: 500px;
+}
+.about-section p {
+  margin: auto;
+  font-size: 1.1rem;
+  color: var(--text-color);
+  width: 600px;
+  max-width: 100%;
 }
 
 .makes-us {
@@ -425,7 +489,9 @@ header .menu-btn i {
 }
 .makes-us .card-container .card img {
   width: 100%;
-  max-height: 150px;
+  max-height: 200px;
+  max-width: 200px;
+  margin: auto;
 }
 .makes-us .card-container:hover .card:not(:hover) {
   opacity: 0.7;
@@ -452,13 +518,14 @@ header .menu-btn i {
   color: var(--text-color);
 }
 .out-business .card {
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  background-color: #f3f9ff;
+  box-shadow: rgba(186, 198, 35, 0.1) 0px 7px 29px 0px;
+  background-color: #fff;
   transition: all 0.4s ease;
   -webkit-transition: all 0.4s ease;
   -moz-transition: all 0.4s ease;
   -ms-transition: all 0.4s ease;
   -o-transition: all 0.4s ease;
+  border-color: #b7cc33;
 }
 .out-business .card:hover {
   transform: translateY(-15px);
@@ -562,7 +629,10 @@ header .menu-btn i {
 }
 .Our-Partners .tutorial .item img {
   width: 200px;
-  height: 100px;
+  aspect-ratio: 3/2;
+  -o-object-fit: contain;
+     object-fit: contain;
+  mix-blend-mode: color-burn;
 }
 @keyframes scroll {
   0% {
@@ -600,22 +670,18 @@ header .menu-btn i {
   background-color: var(--text-color);
   width: 100%;
 }
-.footer .content {
-  height: 41vh;
-}
 .footer .row {
   display: flex;
   flex-wrap: wrap;
-}
-.footer ul {
-  list-style: none;
+  margin: 0 auto;
 }
 .footer .footer-col {
   width: 25%;
   padding: 0 15px;
 }
 .footer .footer-col img {
-  max-width: 100%;
+  max-width: 200px;
+  width: 100%;
 }
 .footer .footer-col h4 {
   font-size: 18px;
@@ -661,6 +727,7 @@ header .menu-btn i {
   margin: 0 10px 10px 0;
   line-height: 40px;
   transition: all 0.5s ease;
+  flex-shrink: 0;
 }
 .footer .footer-col .social-links a:hover {
   color: #151515;
