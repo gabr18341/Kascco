@@ -718,6 +718,9 @@ body {
     right: 0;
     min-height: 600px;
   }
+  .about-page .alt-services .icon-box {
+    margin-top: 50px;
+  }
 }
 .about-page .about .about-img img {
   position: absolute;
@@ -853,4 +856,9 @@ body {
   padding-bottom: 0;
   visibility: visible;
   opacity: 1;
+}
+@media (max-width: 769px) {
+  .about-page .alt-services .icon-box {
+    flex-direction: column;
+  }
 }/*# sourceMappingURL=about.css.map */

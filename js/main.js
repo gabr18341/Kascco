@@ -47,9 +47,13 @@ header.innerHTML = `
 footer.innerHTML = `
   <div class="container row">
             <div class="footer-col">
-                <div>
-                    <img src="assets/images/Logo Kascco complet.svg" alt="">
-                </div>
+                <h4 style="font-size:2.9rem; color:#b7cc33;">Kascco Group</h4>
+                <ul style="padding-left:0 ;">
+                    <li><strong>Address: </strong>Al Kawsar Road, Riyadh
+Riyad , 12486</li>
+                    <li><strong>Phone: </strong>920 01 27 78</li>
+                    <li><strong>Email: </strong> info@kascco.sa</li>
+                </ul>
             </div>
             <div class="footer-col">
                 <h4>Gallery</h4>

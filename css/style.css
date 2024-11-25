@@ -667,13 +667,24 @@ header .menu-btn i {
 }
 
 .footer {
-  background-color: var(--text-color);
-  width: 100%;
+  color: #ffffff;
+  background-color: #ffffff;
+  background: url("../assets/images/footer-bg.jpg") top center no-repeat;
+  background-size: cover;
+  font-size: 14px;
+  position: relative;
+}
+.footer:before {
+  content: "";
+  background: color-mix(in srgb, #060606, transparent 20%);
+  position: absolute;
+  inset: 0;
 }
 .footer .row {
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto;
+  position: relative;
 }
 .footer .footer-col {
   width: 25%;
@@ -734,21 +745,25 @@ header .menu-btn i {
   background-color: #FFF;
 }
 @media (max-width: 767px) {
-  .footer .footer-col {
+  .footer .footer-col:first-child,
+  .footer .footer-col:last-child {
+    width: 100%;
+  }
+  .footer .footer-col:not(:first-child) {
     width: 50%;
     margin-bottom: 30px;
   }
 }
 @media (max-width: 574px) {
-  .footer .footer-col {
-    width: 100%;
-  }
-  .footer .footer-col div {
+  .footer .footer-col:not(:first-child) div {
     text-align: center;
   }
-  .footer .footer-col img {
+  .footer .footer-col:not(:first-child) img {
     width: 200px;
     margin: 0 auto;
+  }
+  .footer .footer-col:last-child {
+    width: 100%;
   }
 }
 
