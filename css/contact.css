@@ -1,5 +1,7 @@
 .contact-bg {
-  height: 40vh;
+  min-height: 40vh;
+  padding-top: 120px;
+  margin-top: -80px;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url("../assets/images/meeting-room.jpg");
   background-position: 50% 100%;
   background-repeat: no-repeat;
