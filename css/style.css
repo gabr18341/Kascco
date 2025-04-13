@@ -167,11 +167,15 @@ header .menu-btn i {
   position: absolute;
   inset: 0 0 0 0;
 }
-.hero-section .carousel .list .item img {
+.hero-section .carousel .list .item video {
   width: 100%;
   height: 100%;
+  max-height: calc(100vh + 80px);
   -o-object-fit: cover;
      object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  border-radius: 0 0 0 0;
 }
 .hero-section .carousel .list .item .content {
   position: absolute;
@@ -438,6 +442,11 @@ header .menu-btn i {
   z-index: 10;
 }
 
+.row {
+  width: 100%;
+  margin: auto;
+}
+
 .about-section {
   color: var(--text-color);
 }
@@ -453,6 +462,7 @@ header .menu-btn i {
 }
 .about-section img {
   max-height: 500px;
+  max-width: 100%;
 }
 .about-section p {
   margin: auto;
@@ -767,6 +777,24 @@ header .menu-btn i {
   }
 }
 
+.kascco-s-anniversary-page {
+  background-color: #f1f5f0;
+  color: #212529;
+  min-height: 80vh;
+}
+.kascco-s-anniversary-page .card {
+  height: 200px;
+}
+.kascco-s-anniversary-page .card .card-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.kascco-s-anniversary-page .card .card-body h5 {
+  font-size: 2rem;
+  color: var(--main-color);
+}
+
 @media (max-width: 798px) {
   header nav {
     position: fixed;
@@ -791,21 +819,10 @@ header .menu-btn i {
   header .menu-btn {
     display: block;
   }
-}
-.kascco-s-anniversary-page {
-  background-color: #f1f5f0;
-  color: #212529;
-  min-height: 80vh;
-}
-.kascco-s-anniversary-page .card {
-  height: 200px;
-}
-.kascco-s-anniversary-page .card .card-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.kascco-s-anniversary-page .card .card-body h5 {
-  font-size: 2rem;
-  color: var(--main-color);
+  .kascco-s-anniversary-page .card {
+    height: 150px;
+  }
+  .page-title h1 {
+    font-size: 35px;
+  }
 }/*# sourceMappingURL=style.css.map */
