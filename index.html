@@ -10,6 +10,8 @@
         content="Kascco Group is a premier provider of workforce solutions, dedicated to connecting skilled professionals with top-tier organizations across various industries. ">
     <meta name="keywords"
         content="Workforce Solutions,Manpower Services,Top recruitment agency for IT ,Temporary staffing services,manpower services">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Kascco Group">
 
     <meta property="og:type" content="website">
     <meta property="og:title" content="Keffah al sharg group - Kascco group">
@@ -29,18 +31,34 @@
     <title>Keffah al sharg group - Kascco group</title>
     <link type="image/x-icon" rel="shortcut icon" href="https://kascco.sa/web/image/website/2/favicon?unique=b6e7d17">
     <!-- bootstrap  -->
+    <link rel="preload" href="lib/bootstrap-5.3.3-dist/css/bootstrap.min.css" as="style">
     <link rel="stylesheet" href="lib/bootstrap-5.3.3-dist/css/bootstrap.min.css">
     <!-- animation on scroll library -->
+    <link rel="preload" href="lib/aos/aos.css" as="style">
     <link href="lib/aos/aos.css" rel="stylesheet">
     <!-- Boxicons CSS -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <!-- swiper slider -->
+    <link rel="preload" href="lib/swiper/swiper-bundle.min.css" as="style">
     <link href="lib/swiper/swiper-bundle.min.css" rel="stylesheet">
-    <script src="lib/swiper/swiper-bundle.min.js"></script>
+    <script defer src="lib/swiper/swiper-bundle.min.js"></script>
     <!-- custom css -->
-    <link type="text/css" rel="stylesheet" href="css/style.css" data-asset-bundle="web.assets_frontend"
-        data-asset-version="0f07815">
-
+    <link rel="preload" href="css/style.css" as="style">
+    <link type="text/css" rel="stylesheet" href="css/style.css" >
+    <style>
+        /* Critical CSS */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .carousel, .about-section, .makes-us, .out-business, .Our-Partners {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        /* Add more critical CSS as needed */
+    </style>
 
 </head>
 
@@ -54,7 +72,8 @@
             <!-- list item -->
             <div class="list">
                 <div class="item">
-                    <img src="assets/images/slide-1.jpg">
+                    <video autoplay="" loop="" muted="" src="https://dra.agency/DRA AGENCY 001.mp4"></video>
+                    <!-- <img src="assets/images/slide-1.jpg" srcset="assets/images/slide-1.jpg 1x, assets/images/slide-1@2x.jpg 2x" sizes="(max-width: 600px) 100vw, 50vw" alt="Kascco group skilled team"> -->
                     <div class="content">
                         <div class="author">Kascco</div>
                         <div class="title">Kascco group provide a skilled team of manpower</div>
@@ -66,8 +85,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="item">
-                    <img src="assets/images/slide-2.jpg">
+                <!-- <div class="item">
+                    <video autoplay="" style="height: 100vh; width: 100vw;" loop="" muted="" src="https://dra.agency/DRA AGENCY 001.mp4"></video>
+                    <img src="assets/images/slide-2.jpg" srcset="assets/images/slide-2.jpg 1x, assets/images/slide-2@2x.jpg 2x" sizes="(max-width: 600px) 100vw, 50vw" alt="Dedicated workforce">
                     <div class="content">
                         <div class="author">Kascco</div>
                         <div class="title">A brighter tomorrow awaits through our dedicated workforce.
@@ -81,9 +101,10 @@
                             <button>SEE MORE</button>
                         </div>
                     </div>
-                </div>
-                <div class="item">
-                    <img src="assets/images/slide-3.jpg">
+                </div> -->
+                <!-- <div class="item">
+                    <video autoplay="" style="height: 100vh; width: 100vw;" loop="" muted="" src="https://dra.agency/DRA AGENCY 001.mp4"></video>
+                    <img src="assets/images/slide-3.jpg" srcset="assets/images/slide-3.jpg 1x, assets/images/slide-3@2x.jpg 2x" sizes="(max-width: 600px) 100vw, 50vw" alt="Business goal achievement">
                     <div class="content">
                         <div class="author">Kascco</div>
                         <div class="title">MEET YOUR BUSINESS GOAL
@@ -97,50 +118,52 @@
                             <button>SEE MORE</button>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
             <!-- list thumnail -->
-            <div class="thumbnail">
+            <!-- <div class="thumbnail">
                 <div class="item">
-                    <img src="assets/images/slide-1.jpg">
-                    <!-- <div class="content">
+                    <video autoplay="" style="height: 100vh; width: 100vw;" loop="" muted="" src="https://dra.agency/DRA AGENCY 001.mp4"></video>
+                    <img src="assets/images/slide-1.jpg" alt="Kascco group skilled team thumbnail">
+                    <div class="content">
                         <div class="title">
                             Name Slider
                         </div>
                         <div class="description">
                             Description
                         </div>
-                    </div> -->
+                    </div>
                 </div>
                 <div class="item">
-                    <img src="assets/images/slide-2.jpg">
-                    <!-- <div class="content">
+                    <img src="assets/images/slide-2.jpg" alt="Dedicated workforce thumbnail">
+                    <video autoplay="" style="height: 100vh; width: 100vw;" loop="" muted="" src="https://dra.agency/DRA AGENCY 001.mp4"></video>
+                    <div class="content">
                         <div class="title">
                             Name Slider
                         </div>
                         <div class="description">
                             Description
                         </div>
-                    </div> -->
+                    </div>
                 </div>
                 <div class="item">
-                    <img src="assets/images/slide-3.jpg">
-                    <!-- <div class="content">
+                    <img src="assets/images/slide-3.jpg" alt="Business goal achievement thumbnail">
+                    <video autoplay="" style="height: 100vh; width: 100vw;" loop="" muted="" src="https://dra.agency/DRA AGENCY 001.mp4"></video>
+                    <div class="content">
                         <div class="title">
                             Name Slider
                         </div>
                         <div class="description">
                             Description
                         </div>
-                    </div> -->
+                    </div>
                 </div>
-            </div>
+            </div> -->
             <!-- next prev -->
 
             <div class="arrows">
-                <button id="prev">
-                    < </button>
-                        <button id="next"> > </button>
+                <button id="prev"> < </button>
+                <button id="next"> > </button>
             </div>
             <!-- time running -->
             <div class="time"></div>
@@ -154,7 +177,7 @@
             <div class="row py-3 align-items-center">
                 <div class="col-md-6 d-flex mb-4 justify-content-center align-items-center " data-aos-delay="400"
                     data-aos="fade-right">
-                    <img src="assets/images/Kascco-Agent.gif" alt="About Us">
+                    <img src="assets/images/Kascco-Agent.gif" srcset="assets/images/Kascco-Agent.gif 1x, assets/images/Kascco-Agent@2x.gif 2x" sizes="(max-width: 600px) 100vw, 50vw" alt="About Kascco Group">
                 </div>
                 <div class="col-md-6" data-aos="fade-left" data-aos-delay="500">
                     <h4 class="sub-title mb-4">About Kascco Group</h4>
@@ -186,7 +209,7 @@
             <div class="card-container row gap-2 mt-5 py-5 ">
                 <div class="card rounded-5 shadow-lg py-3 col-10 col-md-5 col-lg-3 flex-grow-1" data-aos="fade-up" data-aos-delay="300"
                     data-aos-duration="3000">
-                    <img src="assets/images/virtual-assistant.gif" class="card-img-top" alt="FAST SERVICE">
+                    <img src="assets/images/virtual-assistant.gif" srcset="assets/images/virtual-assistant.gif 1x, assets/images/virtual-assistant@2x.gif 2x" sizes="(max-width: 600px) 100vw, 50vw" class="card-img-top" alt="Fast service">
                     <div class="card-body">
                         <h5 class="card-title">FAST SERVICES</h5>
                         <p class="card-text">
@@ -197,7 +220,7 @@
                 </div>
                 <div class="card shadow-lg rounded-5 py-3 col-10 col-md-5 col-lg-3 flex-grow-1" data-aos="fade-up" data-aos-delay="400"
                     data-aos-duration="3000">
-                    <img src="assets/images/reliability.gif" class="card-img-top" alt="QUALIFIED RELIABLE">
+                    <img src="assets/images/reliability.gif" srcset="assets/images/reliability.gif 1x, assets/images/reliability@2x.gif 2x" sizes="(max-width: 600px) 100vw, 50vw" class="card-img-top" alt="Qualified and reliable">
                     <div class="card-body">
                         <h5 class="card-title">QUALIFIED & RELIABLE</h5>
                         <p class="card-text">We deliver exceptional services across the spectrum of human resources,
@@ -208,7 +231,7 @@
                 </div>
                 <div class="card shadow-lg rounded-5 py-3 col-10 col-md-5 col-lg-3 flex-grow-1" data-aos="fade-up" data-aos-delay="500"
                     data-aos-duration="3000">
-                    <img src="assets/images/target.gif" class="card-img-top" alt="TALENT ACQUISITION">
+                    <img src="assets/images/target.gif" srcset="assets/images/target.gif 1x, assets/images/target@2x.gif 2x" sizes="(max-width: 600px) 100vw, 50vw" class="card-img-top" alt="Talent acquisition">
                     <div class="card-body">
                         <h5 class="card-title">TALENT ACQUISITION</h5>
                         <p class="card-text">Our approach continually focuses on identifying specialists, future
@@ -236,7 +259,7 @@
                 <div class="card mb-0 col-12 rounded-top-5 rounded-bottom-0 p-4" data-aos="fade-down" >
                     <div class="row g-0">
                         <div class="col-md-3 d-flex align-items-center justify-content-center">
-                            <img  loading="lazy" src="assets/images/KASCCO-logo.png" class="img-fluid rounded-start" alt="Kascco">
+                            <img  loading="lazy" src="assets/images/KASCCO-logo.png" srcset="assets/images/KASCCO-logo.png 1x, assets/images/KASCCO-logo@2x.png 2x" sizes="(max-width: 600px) 100vw, 50vw" class="img-fluid rounded-start" alt="Kascco logo">
                         </div>
                         <div class="col-md-8 d-flex align-items-center">
                             <div class="card-body">
@@ -252,7 +275,7 @@
                     </div>
                 </div>
                 <div class="card pt-3 mb-3 col-12 col-lg-3 flex-grow-1 text-center rounded-bottom-5 rounded-top-0" data-aos="fade-right"> 
-                    <img  loading="lazy" src="assets/images/logo trp FNL-0١.svg" style="max-width: 300px;margin: auto; " class="card-img-top p-1" alt="I T C S">
+                    <img  loading="lazy" src="assets/images/logo trp FNL-0١.svg" srcset="assets/images/logo trp FNL-0١.svg 1x, assets/images/logo trp FNL-0١@2x.svg 2x" sizes="(max-width: 600px) 100vw, 50vw" class="card-img-top p-1" alt="TRP logo">
                     <div class="card-body">
                         <h5 class="card-title">TRP</h5>
                         <p class="card-text">Established in 2006 by Abdallah Al Garawi to provide solutions,
@@ -265,7 +288,7 @@
                 </div>
                 <div class="card pt-3 mb-3 col-12 col-lg-3 flex-grow-1 text-center rounded-bottom-5 rounded-top-0" data-aos="fade-up"
                 data-aos-anchor-placement="top-bottom"> 
-                    <img  loading="lazy" src="assets/images/Logo Itcs1-0١.svg" style="max-width: 300px;margin: auto; " class="card-img-top p-1" alt="I T C S">
+                    <img  loading="lazy" src="assets/images/Logo Itcs1-0١.svg" srcset="assets/images/Logo Itcs1-0١.svg 1x, assets/images/Logo Itcs1-0١@2x.svg 2x" sizes="(max-width: 600px) 100vw, 50vw" class="card-img-top p-1" alt="ITCS logo">
                     <div class="card-body">
                         <h5 class="card-title">ITCS</h5>
                         <p class="card-text">
@@ -279,7 +302,7 @@
                     </div>
                 </div>
                 <div class="card pt-3 mb-3 col-12 col-lg-3 flex-grow-1 text-center rounded-bottom-5 rounded-top-0"  data-aos="fade-left"> 
-                    <img  loading="lazy" src="assets/images/LOGO-DRA-FINAL.webp" style="max-width: 300px;margin: auto; " class="card-img-top p-1" alt="I T C S">
+                    <img  loading="lazy" src="assets/images/LOGO-DRA-FINAL.webp" srcset="assets/images/LOGO-DRA-FINAL.webp 1x, assets/images/LOGO-DRA-FINAL@2x.webp 2x" sizes="(max-width: 600px) 100vw, 50vw" class="card-img-top p-1" alt="DRA logo">
                     <div class="card-body">
                         <h5 class="card-title">DRA</h5>
                         <p class="card-text">
@@ -296,46 +319,6 @@
         </div>
     </section>
 
-    <!-- certifications -->
-    <!-- <section class="certification mt-5">
-        <div class="container"> -->
-            <!-- <h4 >
-                Certifications
-            </h4>
-            <hr class="mb-5"> -->
-            <!-- Swiper -->
-            <!-- <div class="swiper mySwiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide pb-5">
-                        <div class="card shadow-lg p-4">
-                            <img  loading="lazy"  src="assets/images/iso21500.png" alt="">
-                        </div>
-                    </div>
-                    <div class="swiper-slide pb-5">
-                        <div class="card shadow-lg p-4">
-                            <img  loading="lazy"  src="assets/images/iso27001.png" alt="">
-                        </div>
-                    </div>
-                    <div class="swiper-slide pb-5">
-                        <div class="card shadow-lg p-4">
-                            <img  loading="lazy"  src="assets/images/iso41001.png" alt="">
-                        </div>
-                    </div>
-                    <div class="swiper-slide pb-5">
-                        <div class="card shadow-lg p-4">
-                            <img   loading="lazy" src="assets/images/iso45001.png" alt="">
-                        </div>
-                    </div>
-                    <div class="swiper-slide pb-5">
-                        <div class="card shadow-lg p-4">
-                            <img  loading="lazy"  src="assets/images/iso9001.png" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-pagination"></div>
-            </div> -->
-    <!-- </section> -->
-
     <!-- our client -->
     <section class="Our-Partners py-5">
         <h5 class="mb-2 mt-5">Our Partners</h5>
@@ -343,56 +326,56 @@
             <div class="container">
                 <div class="scroller">
                     <div class="item">
-                        <img loading="lazy" src="assets/images/al-jouf.png" alt="">
+                        <img loading="lazy" src="assets/images/al-jouf.png" srcset="assets/images/al-jouf.png 1x, assets/images/al-jouf@2x.png 2x" sizes="(max-width: 600px) 100vw, 50vw" alt="Al Jouf">
                     </div>
                     <div class="item">
-                        <img loading="lazy" src="assets/images/al-kharayef.png" alt="">
+                        <img loading="lazy" src="assets/images/al-kharayef.png" srcset="assets/images/al-kharayef.png 1x, assets/images/al-kharayef@2x.png 2x" sizes="(max-width: 600px) 100vw, 50vw" alt="Al Kharayef">
                     </div>
                     <div class="item">
-                        <img loading="lazy" src="assets/images/al-kh-industries.png" alt="">
+                        <img loading="lazy" src="assets/images/al-kh-industries.png" srcset="assets/images/al-kh-industries.png 1x, assets/images/al-kh-industries@2x.png 2x" sizes="(max-width: 600px) 100vw, 50vw" alt="Al Kh Industries">
                     </div>
                     <div class="item">
-                        <img loading="lazy" src="assets/images/al-madena.png" alt="">
+                        <img loading="lazy" src="assets/images/al-madena.png" srcset="assets/images/al-madena.png 1x, assets/images/al-madena@2x.png 2x" sizes="(max-width: 600px) 100vw, 50vw" alt="Al Madena">
                     </div>
                     <div class="item">
-                        <img loading="lazy" src="assets/images/battariat.png" alt="">
+                        <img loading="lazy" src="assets/images/battariat.png" srcset="assets/images/battariat.png 1x, assets/images/battariat@2x.png 2x" sizes="(max-width: 600px) 100vw, 50vw" alt="Battariat">
                     </div>
                     <div class="item">
-                        <img loading="lazy" src="assets/images/cbc.png" alt="">
+                        <img loading="lazy" src="assets/images/cbc.png" srcset="assets/images/cbc.png 1x, assets/images/cbc@2x.png 2x" sizes="(max-width: 600px) 100vw, 50vw" alt="CBC">
                     </div>
                     <div class="item">
-                        <img loading="lazy" src="assets/images/clariant.png" alt="">
+                        <img loading="lazy" src="assets/images/clariant.png" srcset="assets/images/clariant.png 1x, assets/images/clariant@2x.png 2x" sizes="(max-width: 600px) 100vw, 50vw" alt="Clariant">
                     </div>
                     <div class="item">
-                        <img loading="lazy" src="assets/images/emaar.png" alt="">
+                        <img loading="lazy" src="assets/images/emaar.png" srcset="assets/images/emaar.png 1x, assets/images/emaar@2x.png 2x" sizes="(max-width: 600px) 100vw, 50vw" alt="Emaar">
                     </div>
                     <div class="item">
-                        <img loading="lazy" src="assets/images/enviromental-services.png" alt="">
+                        <img loading="lazy" src="assets/images/enviromental-services.png" srcset="assets/images/enviromental-services.png 1x, assets/images/enviromental-services@2x.png 2x" sizes="(max-width: 600px) 100vw, 50vw" alt="Environmental Services">
                     </div>
                     <div class="item">
-                        <img loading="lazy" src="assets/images/galvanco.png" alt="">
+                        <img loading="lazy" src="assets/images/galvanco.png" srcset="assets/images/galvanco.png 1x, assets/images/galvanco@2x.png 2x" sizes="(max-width: 600px) 100vw, 50vw" alt="Galvanco">
                     </div>
                     <div class="item">
-                        <img loading="lazy" src="assets/images/harvy.png" alt="">
+                        <img loading="lazy" src="assets/images/harvy.png" srcset="assets/images/harvy.png 1x, assets/images/harvy@2x.png 2x" sizes="(max-width: 600px) 100vw, 50vw" alt="Harvy">
                     </div>
                     <div class="item">
-                        <img loading="lazy" src="assets/images/I-.png" alt="">
+                        <img loading="lazy" src="assets/images/I-.png" srcset="assets/images/I-.png 1x, assets/images/I-@2x.png 2x" sizes="(max-width: 600px) 100vw, 50vw" alt="I-">
                     </div>
                     <div class="item">
-                        <img loading="lazy" src="assets/images/pepsico.png" alt="">
+                        <img loading="lazy" src="assets/images/pepsico.png" srcset="assets/images/pepsico.png 1x, assets/images/pepsico@2x.png 2x" sizes="(max-width: 600px) 100vw, 50vw" alt="Pepsico">
                     </div>
                     <div class="item">
-                        <img loading="lazy" src="assets/images/rd.png" alt="">
+                        <img loading="lazy" src="assets/images/rd.png" srcset="assets/images/rd.png 1x, assets/images/rd@2x.png 2x" sizes="(max-width: 600px) 100vw, 50vw" alt="RD">
                     </div>
                     <div class="item">
-                        <img loading="lazy" src="https://rowadplastic.com/wp-content/uploads/2020/07/rowad-logo.png" alt="">
+                        <img loading="lazy" src="https://rowadplastic.com/wp-content/uploads/2020/07/rowad-logo.png" srcset="https://rowadplastic.com/wp-content/uploads/2020/07/rowad-logo.png 1x, https://rowadplastic.com/wp-content/uploads/2020/07/rowad-logo@2x.png 2x" sizes="(max-width: 600px) 100vw, 50vw" alt="Rowad">
                         <!-- <img loading="lazy" src="assets/images/rowad.png" alt=""> -->
                     </div>
                     <div class="item">
-                        <img loading="lazy" src="assets/images/shippingco.png" alt="">
+                        <img loading="lazy" src="assets/images/shippingco.png" srcset="assets/images/shippingco.png 1x, assets/images/shippingco@2x.png 2x" sizes="(max-width: 600px) 100vw, 50vw" alt="Shipping Co">
                     </div>
                     <div class="item">
-                        <img loading="lazy" src="assets/images/siporex.png" alt="">
+                        <img loading="lazy" src="assets/images/siporex.png" srcset="assets/images/siporex.png 1x, assets/images/siporex@2x.png 2x" sizes="(max-width: 600px) 100vw, 50vw" alt="Siporex">
                     </div>
 
                 </div>
@@ -406,11 +389,11 @@
     </footer>
 
 
-    <script src="js/home-slider.js"></script>
+    <!-- <script src="js/home-slider.js" async></script> -->
     <!-- animation on scroll library -->
-    <script src="lib/aos/aos.js"></script>
-    <script src="lib/bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src="lib/aos/aos.js" async></script>
+    <script src="lib/bootstrap-5.3.3-dist/js/bootstrap.min.js" async></script>
+    <script src="js/main.js" async></script>
 </body>
 
 </html>
